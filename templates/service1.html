@@ -111,7 +111,20 @@
         flex-direction: column;
     }
 }
-    
+      @media (max-width: 600px) {
+        .services-card-section {
+            flex-direction: column;
+        }
+        .services-section {
+            padding: 10px;
+        }
+        .service-container {
+            flex-direction: column; /* Stack cards vertically */
+            align-items: center; /* Center cards horizontally */
+        }
+        .service {
+            width: 100%; /* Full width on mobile */
+        }
     </style>
     </head>
     <body style="background-image: url('../images/back.svg');">
@@ -379,7 +392,7 @@
             <img src="../images/phone.png" alt="Phone Icon" class="icon-img" style="background-color: #850000;">
         </a>
         <a href="https://wa.me/201119589121" class="icon-whatsapp">
-            <img src="../images/whatsapp2.png" alt="WhatsApp Icon" class="icon-img"  style=" background-color: #850000; ">
+            <img src="../images/whatsapp2.png" alt="WhatsApp Icon" class="icon-img"  style=" background-color: #850000; margin-right:40px;">
         </a>
     </div>
    <!-- Footer Section -->
