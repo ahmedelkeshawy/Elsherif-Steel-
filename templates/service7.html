@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Al Shreif Group - Iron Industries</title>
     <link rel="stylesheet" href="../static/css/styles.css">
+  
     <style>
         /* Full width video container */
         .video-container-fullwidth {
@@ -41,7 +42,7 @@
 
         .first-service-card .service-image {
             width: 100%;
-            height: 400px; /* Larger height for the image */
+            height: 500px; /* Larger height for the image */
             object-fit: cover;
         }
 
@@ -84,9 +85,8 @@
         .more-button:hover {
             background-color: #ff4040;
         }
-        .no-underline {
-        text-decoration: none;
-    }
+      
+
 
     .container {
             display: flex;
@@ -142,7 +142,9 @@
             font-size: 1rem; /* Adjust paragraph size */
         }
     }
- 
+  
+
+
           /* Navbar styles */
           nav {
             background-color: white;
@@ -151,7 +153,6 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
-            color: #850000;
         }
 
         .logo img {
@@ -197,7 +198,6 @@
             color: white;
         }
 
-       
 
         /* Responsive styles */
         @media (max-width: 600px) {
@@ -218,12 +218,30 @@
                 max-height: none; /* Allow dropdown to show */
             }
         }
+        @media (max-width: 768px) {
+            .footer-content {
+                width: 100%; /* Ensure full width on mobile */
+            }
 
-</style>
-</head>
-<body style="background-image: url('../images/back.svg');">
-     <!-- Navbar -->
-     <nav style="background-color: white; animation: fadeIn 0.5s ease-in-out; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+            .footer-item {
+                margin-bottom: 20px; /* Add spacing between footer items */
+            }
+
+            .social-icons img {
+                width: 40px; /* Adjust icons size for mobile */
+                height: 35px;
+            }
+
+            ul li {
+                margin: 0 5px; /* Reduce margin for smaller screens */
+            }
+        }
+    </style>
+    </head>
+    <body style="background-image: url('../images/back.svg');">
+      
+       <!-- Navbar -->
+       <nav style="background-color: white; animation: fadeIn 0.5s ease-in-out; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
         <div class="logo">
             <img src="../images/logo.png" alt="Logo" style="height: 70px; width: 100px;"> <!-- Add your logo image here -->
         </div>
@@ -279,7 +297,7 @@
                     onMouseOut="this.style.color='white'; this.style.backgroundColor='#850000';"
                     data-en="Spark Machine (EDM)" data-ar="آلة الشرارة (EDM)"
                     >Spark Machine (EDM)</a>
-                            <hr>
+                       <hr>
                 <a href="../templates/service7.html" style="text-decoration: none; display: block; padding: 8px; color: white;" 
                 onMouseOver="this.style.color='#850000'; this.style.backgroundColor='white';" 
                 onMouseOut="this.style.color='white'; this.style.backgroundColor='#850000';"
@@ -391,185 +409,159 @@
             </li>
         </ul>
     </div>
-    
     <section class="video-section">
-    <video autoplay muted loop>
-        <source src="../images/Mechanical Logo Intro -CONTACT FOR YOUR INTRO(1080P_HD).mp4" type="video/mp4"> <!-- Add your video here -->
-    </video>
-    <div class="video-overlay">
-        <h1>
-            <!-- English Version -->
-            <span class="english" style="color: #850000; font-size: 4rem;">ALSHERIF</span>
-            <br>
-            <span class="english" style="font-size: 1.5rem;">For METAL WORKS & ENGINEERING SUPPLIES</span>
-            
-            <!-- Arabic Version -->
-            <span class="arabic" dir="rtl" style="display: none;">
-                <span style="color: #850000; font-size: 4rem;">الشريف</span>
+        <video autoplay muted loop>
+            <source src="../images/Mechanical Logo Intro -CONTACT FOR YOUR INTRO(1080P_HD).mp4" type="video/mp4"> <!-- Add your video here -->
+        </video>
+        <div class="video-overlay">
+            <h1>
+                <!-- English Version -->
+                <span class="english" style="color: #850000; font-size: 4rem;">ALSHERIF</span>
                 <br>
-                <span style="font-size: 1.5rem;">لتشغيل المعادن والأعمال الهندسية</span>
-            </span>
-        </h1>
-        <hr style="border: none; height: 4px; background-color: white; width: 40%; margin: 10px auto;">
-    
-    </div>
-    </section>
-
-    
-    <section class="services-card-section">
-        <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 20px; max-width: 1200px; margin: 0 auto;">
-            <!-- Left Title and Definition Section -->
-            <div class="text-section" style="flex: 1 1 50%; padding: 10px; box-sizing: border-box; max-width: 600px;">
-                <h1 style="color: #850000; text-align: left; font-size: 24px;" data-en="CNC Bending Machine" data-ar="آلة الانحناء CNC">CNC Bending Machine</h1>
-                <hr style="width: 100%; max-width: 415px; margin: 10px 0;">
-                <p data-en="Our CNC bending machines provide precision bending solutions for various materials, ensuring high accuracy and efficiency." 
-                   data-ar="توفر آلات الانحناء CNC الخاصة بنا حلول انحناء دقيقة لمواد مختلفة، مما يضمن دقة وكفاءة عالية." 
-                   style="font-size: 16px; line-height: 1.5; text-align: left;">
-                   Our CNC bending machines provide precision bending solutions for various materials, ensuring high accuracy and efficiency.
-                </p>
-            </div>
-            
-            <!-- Right Image Section -->
-            <div class="image-section" style="flex: 1 1 50%; padding: 10px; box-sizing: border-box; max-width: 600px; text-align: right;">
-                <img src="../images/cnc-bending-machine.jpg" alt="CNC Bending Machine" style="width: 100%; height: auto; max-width: 600px;">
-            </div>
+                <span class="english" style="font-size: 1.5rem;">For METAL WORKS & ENGINEERING SUPPLIES</span>
+                
+                <!-- Arabic Version -->
+                <span class="arabic" dir="rtl" style="display: none;">
+                    <span style="color: #850000; font-size: 4rem;">الشريف</span>
+                    <br>
+                    <span style="font-size: 1.5rem;">لتشغيل المعادن والأعمال الهندسية</span>
+                </span>
+            </h1>
+            <hr style="border: none; height: 4px; background-color: white; width: 40%; margin: 10px auto;">
         </div>
-    </section>
-    
-
-
-<!-- Other Services Section -->
-<section class="services-section" style="position: relative;">
-    <h2 data-en="Other Services" data-ar="خدمات أخرى" style="text-align: center;">Other Services</h2>
-    <p data-en="These advanced production capabilities work together to enable Al Sharif Metals to provide high-quality products designed specifically for our valued customers." 
-       data-ar="تعمل هذه القدرات الإنتاجية المتقدمة معًا لتمكين شركة الشريف للمعادن من تقديم منتجات عالية الجودة مصممة خصيصًا لعملائنا الكرام." style="text-align: center;">
-       These advanced production capabilities work together to enable Al Sharif Metals to provide high-quality products designed specifically for our valued customers.
-    </p>
-
-    <!-- Service Cards Container -->
-    <div class="service-container">
-        <div class="service" style="border: 1px solid #ccc; border-radius: 5px; width: 300px; margin: 10px; overflow: hidden; text-align: center;">
-            <a href="../templates/service8.html">
-                <img src="../images/argon-electric-co2-welding.jpg" alt="Argon, Electric, & Co2 Welding" style="height: 250px; object-fit: cover;">
-            </a>
-            <h3 data-en="Argon, Electric, & Co2 Welding" data-ar="اللحام بالأرجون، الكهرباء، وثاني أكسيد الكربون">Argon, Electric, & Co2 Welding</h3>
-            <p data-en="Our welding services include Argon, Electric, and Co2 welding techniques, providing high-quality and durable welds for various materials."
-               data-ar="تشمل خدماتنا في اللحام تقنيات اللحام بالأرجون والكهرباء وثاني أكسيد الكربون، مما يوفر لحامات عالية الجودة ومتينة لمواد مختلفة.">
-               Our welding services include Argon, Electric, and Co2 welding techniques, providing high-quality and durable welds for various materials.
-            </p>
-        </div>
-
-        <div class="service" style="border: 1px solid #ccc; border-radius: 5px; width: 300px; margin: 10px; overflow: hidden; text-align: center;">
-            <a href="../templates/service2.html">
-                <img src="../images/cutting wire.jpg" alt="Wire Cutting" style="height: 250px; object-fit: cover;">
-            </a>
-            <h3 data-en="Wire Cutting" data-ar="قطع السلك">Wire Cutting</h3>
-            <p data-en="We perform wire cutting (EDM) to achieve intricate and highly precise cuts for complex shapes and fine details." 
-               data-ar="نقوم بقطع المعادن باستخدام تقنيات القطع بالسلك (EDM) لضمان دقة متناهية للقطع المعقدة والتفاصيل الدقيقة.">
-               We perform wire cutting (EDM) to achieve intricate and highly precise cuts for complex shapes and fine details.
-            </p>
-        </div>
-
-    </div>
-
-    <a href="../templates/services.html" class="no-underline">
-        <button class="more-button" data-en="More Services" data-ar="المزيد من الخدمات" style="background-color: #850000;">More Services</button>
-    </a>
-</section>
+        </section>
+        
 
    
-    <div class="fixed-icons">
-        <a href="tel:+201119589121" class="icon-phone">
-            <img src="../images/phone.png" alt="Phone Icon" class="icon-img" style="background-color: #850000;">
-        </a>
-        <a href="https://wa.me/201119589121" class="icon-whatsapp">
-            <img src="../images/whatsapp2.png" alt="WhatsApp Icon" class="icon-img"  style=" background-color: #850000; ">
-        </a>
-    </div>
-       <!-- Footer Section -->
-<footer style="background-color: #737373; color: white; padding: 20px;">
-    <div style="display: flex; justify-content: space-between; align-items: stretch; flex-wrap: wrap;">
-
-        <!-- Left Part -->
-        <div style="flex: 1; margin: 0 10px; text-align: center; padding: 20px; border-radius: 8px; background-color: rgba(255, 255, 255, 0.1); box-shadow: 0 4px 15px white; height: 300px; transition: transform 0.3s, box-shadow 0.3s;" 
-             onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px white'" 
-             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px white'">
-            <h3 data-en="Always be in touch" data-ar="كن دائماً على تواصل" style="font-size: 1.5rem;">Always be in touch</h3>
-            <hr style="border: 1px solid white; margin: 10px auto; width: 50%;">
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <div style="display: flex; align-items: center; margin: 10px 0;">
-                    <a href="tel:+201119589121" title="Call Us">
-                        <img src="../images/phone.png" alt="Phone" style="width: 60px; height: 50px; margin-right: 10px;">
-                    </a>
-                    <label data-en="Phone" data-ar="الهاتف" style="color: white; transition: color 0.3s;" 
-                    onmouseover="this.style.color='#850000'" 
-                    onmouseout="this.style.color='white'">Phone</label>                </div>
-                <div style="display: flex; align-items: center; margin: 10px 0;">
-                    <a href="mailto:alsherif.group2000@gmail.com" title="Email Us">
-                        <img src="../images/email.webp" alt="Email" style="width: 85px; height: 75px; margin-right: -15px; margin-left: 0px;">
-                    </a>
-                    <label data-en="Email" data-ar="الايميل" style="color: white; transition: color 0.3s; padding-right: 30px;padding-left: 20px;" 
-                           onmouseover="this.style.color='#850000'" 
-                           onmouseout="this.style.color='white'">Email</label>
+     
+        <section class="services-card-section">
+            <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 20px; max-width: 1200px; margin: 0 auto;">
+                <!-- Left Title and Definition Section -->
+                <div class="text-section" style="flex: 1 1 50%; padding: 10px; box-sizing: border-box; max-width: 600px;">
+                    <h1 style="color: #850000; text-align: left; font-size: 24px;" data-en="CNC Bending Machine" data-ar="آلة الانحناء CNC">CNC Bending Machine</h1>
+                    <hr style="width: 100%; max-width: 415px; margin: 10px 0;">
+                    <p data-en="Our CNC bending machines provide precision bending solutions for various materials, ensuring high accuracy and efficiency." 
+                       data-ar="توفر آلات الانحناء CNC الخاصة بنا حلول انحناء دقيقة لمواد مختلفة، مما يضمن دقة وكفاءة عالية." 
+                       style="font-size: 16px; line-height: 1.5; text-align: left;">
+                       Our CNC bending machines provide precision bending solutions for various materials, ensuring high accuracy and efficiency.
+                    </p>
                 </div>
-                <div style="display: flex; align-items: center; margin: 10px 0;">
-                    <a href="https://maps.app.goo.gl/6C612CEgrTtMazme9" title="Location">
-                        <img src="../images/location.png" alt="Location" style="width: 60px; height: 50px; margin-right: 10px;">
-                    </a>
-                    <label data-en="Location" data-ar="الموقع" style="color: white; transition: color 0.3s;" 
-                    onmouseover="this.style.color='#850000'" 
-                    onmouseout="this.style.color='white'">Location</label>                </div>
+                
+                <!-- Right Image Section -->
+                <div class="image-section" style="flex: 1 1 50%; padding: 10px; box-sizing: border-box; max-width: 600px; text-align: right;">
+                    <img src="../images/cnc-bending-machine.jpg" alt="CNC Bending Machine" style="width: 100%; height: auto; max-width: 600px;">
+                </div>
+            </div>
+        </section>
+        
+    
+    
+    <!-- Other Services Section -->
+    <section class="services-section" style="position: relative;">
+        <h2 data-en="Other Services" data-ar="خدمات أخرى" style="text-align: center;">Other Services</h2>
+        <p data-en="These advanced production capabilities work together to enable Al Sharif Metals to provide high-quality products designed specifically for our valued customers." 
+           data-ar="تعمل هذه القدرات الإنتاجية المتقدمة معًا لتمكين شركة الشريف للمعادن من تقديم منتجات عالية الجودة مصممة خصيصًا لعملائنا الكرام." style="text-align: center;">
+           These advanced production capabilities work together to enable Al Sharif Metals to provide high-quality products designed specifically for our valued customers.
+        </p>
+    
+        <!-- Service Cards Container -->
+        <div class="service-container">
+            <div class="service" style="border: 1px solid #ccc; border-radius: 5px; width: 300px; margin: 10px; overflow: hidden; text-align: center;">
+                <a href="../templates/service8.html">
+                    <img src="../images/argon-electric-co2-welding.jpg" alt="Argon, Electric, & Co2 Welding" style="height: 250px; object-fit: cover;">
+                </a>
+                <h3 data-en="Argon, Electric, & Co2 Welding" data-ar="اللحام بالأرجون، الكهرباء، وثاني أكسيد الكربون">Argon, Electric, & Co2 Welding</h3>
+                <p data-en="Our welding services include Argon, Electric, and Co2 welding techniques, providing high-quality and durable welds for various materials."
+                   data-ar="تشمل خدماتنا في اللحام تقنيات اللحام بالأرجون والكهرباء وثاني أكسيد الكربون، مما يوفر لحامات عالية الجودة ومتينة لمواد مختلفة.">
+                   Our welding services include Argon, Electric, and Co2 welding techniques, providing high-quality and durable welds for various materials.
+                </p>
+            </div>
+    
+            <div class="service" style="border: 1px solid #ccc; border-radius: 5px; width: 300px; margin: 10px; overflow: hidden; text-align: center;">
+                <a href="../templates/service2.html">
+                    <img src="../images/cutting wire.jpg" alt="Wire Cutting" style="height: 250px; object-fit: cover;">
+                </a>
+                <h3 data-en="Wire Cutting" data-ar="قطع السلك">Wire Cutting</h3>
+                <p data-en="We perform wire cutting (EDM) to achieve intricate and highly precise cuts for complex shapes and fine details." 
+                   data-ar="نقوم بقطع المعادن باستخدام تقنيات القطع بالسلك (EDM) لضمان دقة متناهية للقطع المعقدة والتفاصيل الدقيقة.">
+                   We perform wire cutting (EDM) to achieve intricate and highly precise cuts for complex shapes and fine details.
+                </p>
+            </div>
+    
+        </div>
+    
+        <a href="../templates/services.html" class="no-underline">
+            <button class="more-button" data-en="More Services" data-ar="المزيد من الخدمات" style="background-color: #850000;">More Services</button>
+        </a>
+    </section>
+    
+       
+        <div class="fixed-icons">
+            <a href="tel:+201119589121" class="icon-phone">
+                <img src="../images/phone.png" alt="Phone Icon" class="icon-img" style="background-color: #850000;">
+            </a>
+            <a href="https://wa.me/201119589121" class="icon-whatsapp">
+                <img src="../images/whatsapp2.png" alt="WhatsApp Icon" class="icon-img"  style=" background-color: #850000; ">
+            </a>
+        </div>
+ 
+    <footer style="background-color: black; color: white; padding: 20px; height: 200px;">
+        <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; width: 900px; max-width: 100%;"> <!-- Responsive width -->
+                
+                <!-- First Part -->
+                <div style="flex: 1; margin: 0 10px; text-align: center; padding: 20px; border-radius: 8px; background-color: rgba(255, 255, 255, 0.1); box-shadow: 0 4px 15px white; width: 100%; height: 150px; transition: transform 0.3s, box-shadow 0.3s;">
+                    <div style="display: flex; justify-content: center; gap: 10px;">
+                        <a href="#">
+                            <img src="../images/facebook.png" alt="Facebook" style="width: 60px; height: 50px;">
+                        </a>
+                        <a href="https://wa.me/201119589121">
+                            <img src="../images/whatsapp.png" alt="WhatsApp" style="width: 60px; height: 50px;">
+                        </a>
+                        <a href="#">
+                            <img src="../images/youtube.png" alt="YouTube" style="width: 60px; height: 50px;">
+                        </a>
+                        <a href="tel:+201119589121">
+                            <img src="../images/phone.png" alt="Phone" style="width: 60px; height: 50px;">
+                        </a>
+                        <a href="https://maps.app.goo.gl/6C612CEgrTtMazme9">
+                            <img src="../images/location.png" alt="Location" style="width: 60px; height: 50px;">
+                        </a>
+                    </div>
+                    <hr style="width: 330px;">
+                    <ul style="list-style-type: none; padding: 0; display: flex; justify-content: center; flex-wrap: wrap;">
+                        <li style="margin: 0 10px;">
+                            <a href="../index.html" data-en="Main" data-ar="الرئيسية" style="color: white; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#850000'" onmouseout="this.style.color='white'">Main</a>
+                        </li>
+                        <li style="margin: 0 10px;">
+                            <a href="../templates/who are we.html" data-en="Who Are We" data-ar="من نحن" style="color: white; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#850000'" onmouseout="this.style.color='white'">Who Are We</a>
+                        </li>
+                        <li style="margin: 0 10px;">
+                            <a href="../templates/services.html" data-en="Our Services" data-ar="خدماتنا" style="color: white; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#850000'" onmouseout="this.style.color='white'">Our Services</a>
+                        </li>
+                        <li style="margin: 0 10px;">
+                            <a href="../templates/products.html" data-en="Our Products" data-ar="منتجاتنا" style="color: white; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#850000'" onmouseout="this.style.color='white'">Our Products</a>
+                        </li>
+                        <li style="margin: 0 10px;">
+                            <a href="../templates/contact us.html" data-en="Contact Us" data-ar="تواصل معنا" style="color: white; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#850000'" onmouseout="this.style.color='white'">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-
-        <!-- Middle Part -->
-        <div style="flex: 1; margin: 0 10px; text-align: center; padding: 20px; border-radius: 8px; background-color: rgba(255, 255, 255, 0.1); box-shadow: 0 4px 15px white; height: 300px; transition: transform 0.3s, box-shadow 0.3s;"
-             onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px white'" 
-             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px white'">
-            <h3 data-en="Important Links" data-ar="روابط مهمة" style="font-size: 1.5rem;">Important Links</h3>
-            <hr style="border: 1px solid white; margin: 10px auto; width: 50%;">
-            <ul style="list-style-type: none; padding: 0;">
-                <li style="margin: 5px 0;"><a href="../index.html" data-en="Main" data-ar="الرئيسية" style="color: white; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#850000'" onmouseout="this.style.color='white'">Main</a></li>
-                <li style="margin: 5px 0;"><a href="../templates/who are we.html" data-en="Who Are We" data-ar="من نحن" style="color: white; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#850000'" onmouseout="this.style.color='white'">Who Are We</a></li>
-                <li style="margin: 5px 0;"><a href="../templates/services.html" data-en="Our Services" data-ar="خدماتنا" style="color: white; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#850000'" onmouseout="this.style.color='white'">Our Services</a></li>
-                <li style="margin: 5px 0;"><a href="../templates/products.html" data-en="Our Products" data-ar="منتجاتنا" style="color: white; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#850000'" onmouseout="this.style.color='white'">Our Products</a></li>
-                <li style="margin: 5px 0;"><a href="../templates/contact us.html" data-en="Contact Us" data-ar="تواصل معنا" style="color: white; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#850000'" onmouseout="this.style.color='white'">Contact Us</a></li>
-            </ul>
+    
+        <!-- Scroll to Top Image Icon -->
+        <div style="position: fixed; bottom: 150px; left: 120px; transform: translateX(-50%); height: 50px;">
+            <img src="../images/top arrow.png" alt="Scroll to Top" 
+                 onclick="scrollToTop()" 
+                 style="cursor: pointer; width: 60px; height: auto; transition: transform 0.3s; margin-left: -130px;" 
+                 onmouseover="this.style.transform='scale(1.1)'" 
+                 onmouseout="this.style.transform='scale(1)'">
         </div>
+    </footer>
+    
+        
 
-        <!-- Right Part -->
-        <div style="flex: 1; margin: 0 10px; text-align: center; padding: 20px; border-radius: 8px; background-color: rgba(255, 255, 255, 0.1); box-shadow: 0 4px 15px white; height: 300px; transition: transform 0.3s, box-shadow 0.3s;"
-             onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px white'" 
-             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px white'">
-            <img src="../images/logo1.png" alt="Logo" style="height: 40%; width: 40%;">
-            <p data-en="We are a leading company in metal operating and forming, providing high-quality services and products." 
-               data-ar="نحن شركة رائدة في تشغيل وتشكيل المعادن، نقدم خدمات ومنتجات عالية الجودة" style="font-size: 0.9rem;">
-                We are a leading company in metal operating and forming, providing high-quality services and products.
-            </p>
-            <div style="display: flex; justify-content: center; gap: 10px;">
-                <a href="#">
-                    <img src="../images/facebook.png" alt="Facebook" style="width: 60px; height: 50px;">
-                </a>
-                <a href="https://wa.me/201119589121">
-                    <img src="../images/whatsapp.png" alt="WhatsApp" style="width: 60px; height: 50px;">
-                </a>
-                <a href="#">
-                    <img src="../images/youtube.png" alt="YouTube" style="width: 60px; height: 50px;">
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Scroll to Top Image Icon -->
-    <div style="position: fixed; bottom: 150px; left: 120px; transform: translateX(-50%); height: 50px;">
-        <img src="../images/top arrow.png" alt="Scroll to Top" 
-             onclick="scrollToTop()" 
-             style="cursor: pointer; width: 60px; height: auto; transition: transform 0.3s; margin-left: -130px;" 
-             onmouseover="this.style.transform='scale(1.1)'" 
-             onmouseout="this.style.transform='scale(1)'">
-    </div>
-</footer>
-        <script src="../static/js/script.js"></script>
-
+    <script src="../static/js/script.js"></script>
 </body>
 </html>
