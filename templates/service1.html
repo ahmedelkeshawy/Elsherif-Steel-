@@ -7,124 +7,220 @@
     <link rel="stylesheet" href="../static/css/styles.css">
   
     <style>
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column; /* Stack items vertically on smaller screens */
-                align-items: center; /* Center align items */
-            }
-    
-            .text-section {
-                flex-basis: 100%; /* Full width for text section */
-                margin-bottom: 20px; /* Space between sections */
-            }
-    
-            .image-section {
-                flex-basis: 100%; /* Full width for image section */
-            }
-    
-            .text-section h1 {
-                font-size: 2rem; /* Adjust heading size */
-            }
-    
-            .text-section p {
-                font-size: 1rem; /* Adjust paragraph size */
-            }
+        /* Full width video container */
+        .video-container-fullwidth {
+            width: 100vw; /* Full viewport width */
+            height: 700px; /* Adjust the height to desired value */
+            overflow: hidden;
+            margin-bottom: 30px; /* Add space between video and first card */
         }
-      
-    
-              /* Navbar styles */
-              nav {
-                background-color: white;
-                animation: fadeIn 0.5s ease-in-out;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 10px 20px;
-            }
-    
-            .logo img {
-                height: 70px;
-                width: 100px;
-            }
-    
-            .nav-items {
-                list-style-type: none;
-                padding: 0;
-                display: flex;
-                gap: 20px;
-                position: relative;
-            }
-    
-            .nav-items a {
-                color: #850000;
-                font-size: x-large;
-                text-decoration: none;
-                padding: 10px;
-                position: relative;
-            }
-    
-            .nav-items .dropdown {
-                position: relative;
-            }
-    
-            .nav-items .dropdown-content {
-                position: absolute;
-                background-color: #850000;
-                color: white;
-                min-width: 160px;
-                z-index: 1;
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.4s ease-out;
-            }
-    
-            .nav-items .dropdown-content a {
-                text-decoration: none;
-                display: block;
-                padding: 8px;
-                color: white;
-            }
-    
-          
-            /* Responsive styles */
-            @media (max-width: 600px) {
-                .nav-items {
-                    flex-direction: column; /* Stack items vertically on mobile */
-                    align-items: flex-start; /* Align items to the start */
-                    width: 100%; /* Full width */
-                    padding: 10px 0; /* Padding for mobile */
-                }
-    
-                .nav-items a {
-                    width: 100%; /* Full width links */
-                    text-align: left; /* Align text to the left */
-                }
-    
-                .dropdown-content {
-                    position: relative; /* Position the dropdown content */
-                    max-height: none; /* Allow dropdown to show */
-                }
-            }
-            @media (max-width: 768px) {
-    div {
-        flex-direction: column;
-    }
-}
-      @media (max-width: 600px) {
+
+        .video-container-fullwidth video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the video covers the entire container without distortion */
+        }
+
+        /* Centering and resizing the service cards */
         .services-card-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             flex-direction: column;
+            margin-bottom: 40px;
         }
-        .services-section {
-            padding: 10px;
+
+        /* First card - Larger and centered */
+        .first-service-card {
+            width: 1000px; /* Increase the width */
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
         }
+
+        .first-service-card .service-image {
+            width: 100%;
+            height: 500px; /* Larger height for the image */
+            object-fit: cover;
+        }
+
+        /* Second and third service cards - Centered */
         .service-container {
-            flex-direction: column; /* Stack cards vertically */
-            align-items: center; /* Center cards horizontally */
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
-        .service {
-            width: 100%; /* Full width on mobile */
+
+        .service-container .service {
+            width: 300px; /* Keep size normal */
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
         }
+
+        .service-container .service img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        /* Button styles */
+        .more-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .more-button:hover {
+            background-color: #ff4040;
+        }
+        .no-underline {
+        text-decoration: none;
+    }
+
+
+    .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .text-section {
+            flex-basis: 50%;
+        }
+
+        .text-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .text-section hr {
+            border: 1px solid #333;
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .text-section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+    
+  
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column; /* Stack items vertically on smaller screens */
+            align-items: center; /* Center align items */
+        }
+
+        .text-section {
+            flex-basis: 100%; /* Full width for text section */
+            margin-bottom: 20px; /* Space between sections */
+        }
+
+        .image-section {
+            flex-basis: 100%; /* Full width for image section */
+        }
+
+        .text-section h1 {
+            font-size: 2rem; /* Adjust heading size */
+        }
+
+        .text-section p {
+            font-size: 1rem; /* Adjust paragraph size */
+        }
+    }
+  
+
+
+          /* Navbar styles */
+          nav {
+            background-color: white;
+            animation: fadeIn 0.5s ease-in-out;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            height: 70px;
+            width: 100px;
+        }
+
+        .nav-items {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            position: relative;
+        }
+
+        .nav-items a {
+            color: #850000;
+            font-size: x-large;
+            text-decoration: none;
+            padding: 10px;
+            position: relative;
+        }
+
+        .nav-items .dropdown {
+            position: relative;
+        }
+
+        .nav-items .dropdown-content {
+            position: absolute;
+            background-color: #850000;
+            color: white;
+            min-width: 160px;
+            z-index: 1;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+        }
+
+        .nav-items .dropdown-content a {
+            text-decoration: none;
+            display: block;
+            padding: 8px;
+            color: white;
+        }
+
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            .nav-items {
+                flex-direction: column; /* Stack items vertically on mobile */
+                align-items: flex-start; /* Align items to the start */
+                width: 100%; /* Full width */
+                padding: 10px 0; /* Padding for mobile */
+            }
+
+            .nav-items a {
+                width: 100%; /* Full width links */
+                text-align: left; /* Align text to the left */
+            }
+
+            .dropdown-content {
+                position: relative; /* Position the dropdown content */
+                max-height: none; /* Allow dropdown to show */
+            }
+        }
+   
     </style>
     </head>
     <body style="background-image: url('../images/back.svg');">
@@ -321,14 +417,6 @@
         </div>
         </section>
         
-    <div class="fixed-icons">
-        <a href="tel:+201119589121" class="icon-phone">
-            <img src="../images/phone.png" alt="Phone Icon" class="icon-img" style="background-color: #850000;">
-        </a>
-        <a href="https://wa.me/201119589121" class="icon-whatsapp">
-            <img src="../images/whatsapp2.png" alt="WhatsApp Icon" class="icon-img"  style=" background-color: #850000; ">
-        </a>
-    </div>
 
    
     <!-- Services Section -->
@@ -391,8 +479,8 @@
         <a href="tel:+201119589121" class="icon-phone">
             <img src="../images/phone.png" alt="Phone Icon" class="icon-img" style="background-color: #850000;">
         </a>
-        <a href="https://wa.me/201119589121" class="icon-whatsapp">
-            <img src="../images/whatsapp2.png" alt="WhatsApp Icon" class="icon-img"  style=" background-color: #850000; margin-right:40px;">
+        <a href="https://wa.me/201119589121" class="icon-whatsapp" style="margin-right:10px;">
+            <img src="../images/whatsapp2.png" alt="WhatsApp Icon" class="icon-img"  style=" background-color: #850000; ">
         </a>
     </div>
    <!-- Footer Section -->
