@@ -250,7 +250,24 @@
         }
     }
         
-        
+       @media only screen and (max-width: 600px) {
+    .text-section {
+        max-width: 100% !important; /* Make text section full width on small screens */
+    }
+    .text-section h1 {
+        font-size: 1.5em !important; /* Adjust font size for heading */
+    }
+    .text-section p {
+        font-size: 1em !important; /* Keep paragraph font size readable on smaller screens */
+    }
+    .image-section {
+        max-width: 100% !important; /* Make image section full width on small screens */
+    }
+    .image-section img {
+        width: 100% !important; /* Make image responsive */
+        height: auto !important; /* Maintain aspect ratio */
+    }
+} 
 
 </style>
 </head>
@@ -450,20 +467,21 @@
     </section>
     
    
-    <div class="container">
+      <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center;">
         <!-- Left Title and Definition Section -->
-        <div class="text-section">
-            <h1 style="color: #850000;" data-en="About Al Shreif Group"  data-ar="عن مجموعة الشريف">About Al Shreif Group</h1>
-            <hr style="width: 415px; margin-left: 0; " >
+        <div class="text-section" style="flex: 1; max-width: 50%; padding: 10px;">
+            <h1 style="color: #850000; font-size: 2em;" data-en="About Al Shreif Group" data-ar="عن مجموعة الشريف">About Al Shreif Group</h1>
+            <hr style="width: 415px; margin-left: 0;">
             <p data-en="Al Shreif Group A leader in metalworking and engineering supplies. We offer you a wide range of products manufactured with high precision using the latest technologies. Our specialized team ensures that you get a high-quality product that meets all your requirements. We are committed to providing the best services to our customers, and we strive Always exceed their expectations." 
-                data-ar="مجموعة الشريف رائدة في مجال توريدات المعادن والهندسة، نقدم لكم مجموعة واسعة من المنتجات المصنعة بدقة عالية باستخدام أحدث التقنيات، فريقنا المتخصص يضمن حصولكم على منتج عالي الجودة يلبي كافة متطلباتكم، نحن ملتزمون بتقديم أفضل الخدمات لعملائنا، ونسعى دائمًا إلى تجاوز توقعاتهم" >
-                Al Shreif Group A leader in metalworking and engineering supplies. We offer you a wide range of products manufactured with high precision using the latest technologies. Our specialized team ensures that you get a high-quality product that meets all your requirements. We are committed to providing the best services to our customers, and we strive Always exceed their expectations.
-                 </p>
+               data-ar="مجموعة الشريف رائدة في مجال توريدات المعادن والهندسة، نقدم لكم مجموعة واسعة من المنتجات المصنعة بدقة عالية باستخدام أحدث التقنيات، فريقنا المتخصص يضمن حصولكم على منتج عالي الجودة يلبي كافة متطلباتكم، نحن ملتزمون بتقديم أفضل الخدمات لعملائنا، ونسعى دائمًا إلى تجاوز توقعاتهم"
+               style="font-size: 1em; text-align: justify;">
+               Al Shreif Group A leader in metalworking and engineering supplies. We offer you a wide range of products manufactured with high precision using the latest technologies. Our specialized team ensures that you get a high-quality product that meets all your requirements. We are committed to providing the best services to our customers, and we strive Always exceed their expectations.
+            </p>
         </div>
-
+    
         <!-- Right Image Section -->
-        <div class="image-section">
-            <img src="../images/company image.png" alt="Company Image" style="height: 350px; width: 700px;" > <!-- Replace with the actual image of the company -->
+        <div class="image-section" style="flex: 1; max-width: 50%; padding: 10px; text-align: center;">
+            <img src="../images/company image.png" alt="Company Image" style="width: 700px; height: 350px;">
         </div>
     </div>
     <h1 style="color: #850000; text-align: center;">Company Profile</h1>
